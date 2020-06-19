@@ -6,6 +6,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
+asciidoc: {}
 asciidoctor:
   base_dir:
   safe: unsafe
