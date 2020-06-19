@@ -1,0 +1,15 @@
+title: Metadata Registry Federation
+description: Specification for Federating Research Metadata
+exclude:
+  - LICENSE.adoc
+  - README.adoc
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+asciidoctor:
+  base_dir:
+  safe: unsafe
+  attributes:
+    - idseparator=_
+    - source-highlighter=coderay
+    - icons=font

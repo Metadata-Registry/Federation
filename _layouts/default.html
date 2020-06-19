@@ -1,0 +1,146 @@
+<!doctype html>
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en"> <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.title}}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="Your name goes here">
+    <meta name="copyright" content="Maybe consider a Creative Commons license">
+    <link rel="stylesheet" href="{{page.root}}css/foundation.css">
+    <link rel="stylesheet" href="{{page.root}}css/font-awesome.css">
+    <link rel="stylesheet" href="{{page.root}}css/coderay.css">
+    <link rel="stylesheet" href="{{page.root}}css/asciidoctor.css">
+    <script src="{{page.root}}js/vendor/modernizr.js"></script>
+    <script src="{{page.root}}js/toc.js"></script>
+</head>
+<body>
+
+
+<!-- Nav Bar -->
+
+<nav class="top-bar" data-topbar>
+    <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+            <h1>
+                <a href="{{page.root}}">{{site.title}}</a>
+            </h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+</nav>
+<!-- End Nav -->
+   
+
+<!-- Main Page Content and Sidebar -->
+    
+    <div class="large-3 column">
+        <ul class="nav">
+            <div id="toctitle">Table of Contents</div>
+            <ul class="sectlevel1">
+                <li><a href="#about_the_author">About the Author</a></li>
+                <li><a href="#scope">Scope</a></li>
+                <li><a href="#discussion_notes">Discussion Notes</a>
+                    <ul class="sectlevel2">
+                        <li><a href="#versioning_and_publishing">Versioning and publishing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#proposal_background">Proposal Background</a>
+                    <ul class="sectlevel2">
+                        <li><a href="#background">Background</a></li>
+                    </ul>
+                </li>
+                <li><a href="#requirements">Requirements</a>
+                    <ul class="sectlevel2">
+                        <li><a href="#primary_requirements">Primary Requirements</a></li>
+                    </ul>
+                </li>
+                <li><a href="#secondary_requirements">Secondary Requirements</a>
+                    <ul class="sectlevel2">
+                        <li><a href="#versioning">Versioning</a></li>
+                        <li><a href="#linking">Linking</a></li>
+                        <li><a href="#import_mechanism">Import Mechanism</a></li>
+                    </ul>
+                </li>
+                <li><a href="#basic_principles">Basic Principles</a>
+                    <ul class="sectlevel2">
+                        <li><a href="#descriptive_metadata">Descriptive Metadata</a></li>
+                        <li><a href="#technical_metadata">Technical Metadata</a></li>
+                        <li><a href="#security_concerns">Security (Concerns)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#metamodel_specification">Metamodel Specification</a>
+                    <ul class="sectlevel2">
+                        <li><a href="#revised_metamodel_overview">Revised Metamodel Overview</a></li>
+                        <li><a href="#fmdr_grammar">FMDR Grammar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#minimum_viable_product_mvp_implementation">Minimum Viable Product (MVP) : Implementation</a></li>
+                <li><a href="#summary">Summary</a></li>
+            </ul>
+    </div>
+
+    <div class="row">
+        
+        <div class="large-9 column">
+            {{content}}
+        </div>
+    </div>
+    
+    
+    
+
+<!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+
+<footer class="row">
+    <div class="large-12 columns">
+        <hr>
+        <div class="row">
+            <div class="large-12 columns">
+                <p>Footer</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="{{page.root}}js/vendor/jquery.js"></script>
+<script src="{{page.root}}js/foundation.min.js"></script>
+<script>
+$(document).foundation();
+var doc = document.documentElement;
+doc.setAttribute('data-useragent', navigator.userAgent);
+</script>
+</body>
+</html>
+
+<!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+
+<footer class="row">
+    <div class="large-12 columns">
+        <hr>
+        <div class="row">
+            <div class="large-12 columns">
+                <p>Footer</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="{{page.root}}js/vendor/jquery.js"></script>
+<script src="{{page.root}}js/foundation.min.js"></script>
+<script>
+$(document).foundation();
+var doc = document.documentElement;
+doc.setAttribute('data-useragent', navigator.userAgent);
+</script>
+</body>
+</html>
