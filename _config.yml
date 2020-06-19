@@ -13,3 +13,5 @@ asciidoctor:
     - idseparator=_
     - source-highlighter=coderay
     - icons=font
+
+theme: jekyll-theme-cayman
